@@ -10,3 +10,5 @@ button.addEventListener('click', () => {
   applyTheme(dark);
   try { localStorage.setItem('resume-theme', dark ? 'dark' : 'light'); } catch { /* Theme still works without storage. */ }
 });
+
+document.querySelector('#print').addEventListener('click', () => window.print());
